@@ -48,6 +48,7 @@ export default defineConfig([globalIgnores([
         "plugin:prettier/recommended",
         "plugin:react-hooks/recommended",
         "plugin:jsx-a11y/recommended",
+        "plugin:@next/next/recommended",
     )),
 
     plugins: {
