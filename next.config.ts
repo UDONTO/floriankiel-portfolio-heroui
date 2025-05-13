@@ -14,7 +14,7 @@ const nextConfig: NextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: "/floriankiel-portfolio-heroui",
+  basePath: process.env.DEVELOPMENT ? "" : "/floriankiel-portfolio-heroui",
   // Configure `pageExtensions` to include markdown and MDX files
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
 
