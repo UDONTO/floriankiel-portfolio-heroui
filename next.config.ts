@@ -1,7 +1,8 @@
 import createMDX from "@next/mdx";
+import { NextConfig } from "next";
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   /**
    * Enable static exports.
    *
@@ -29,4 +30,6 @@ const nextConfig = {
 };
 
 // Merge MDX config with Next.js config
-export default createMDX(nextConfig);
+const withMDX = createMDX();
+/** @type {import('next').NextConfig} */
+export default withMDX(nextConfig);
