@@ -112,8 +112,8 @@ export default function Home() {
         <p className="text-2xl">
           Ich habe auch schon mal ein Praktikum bei der Firma{" "}
           <a className="text-primary " href="https://www.triplesensereply.de/">
-            Reply Tripplesense
-          </a>
+            Reply Triplesense
+          </a>{" "}
           gemacht.
         </p>
       </div>
