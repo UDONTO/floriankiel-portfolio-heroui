@@ -1,4 +1,5 @@
 import { Card, CardBody, CardHeader } from "@heroui/card";
+import Image from "next/image";
 
 import { title } from "@/components/primitives";
 
@@ -6,16 +7,17 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div>
-        <img
-          src="/20250507_133220.jpg"
+        <Image
           alt="A picture of Florian Kiel"
           className="rounded-full  w-96 h-auto mt-8"
-        ></img>
+          height={384}
+          loading="eager"
+          src="/20250507_133220.jpg"
+          width={384}
+        />
       </div>
       <div className="flex flex-col items-center justify-center mt-8">
         <h1 className={title({ size: "lg" })}>Hi! Ich bin Florian Kiel</h1>
-
-        <br />
         <span className="flex flex-col items-center justify-center text-2xl">
           <p className="flex flex-col items-center justify-center">
             Dies ist meine Portfolio Webseite.
