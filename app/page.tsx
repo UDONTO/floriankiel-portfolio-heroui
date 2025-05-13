@@ -12,7 +12,7 @@ export default function Home() {
           className="rounded-full  w-96 h-auto mt-8"
           height={384}
           loading="eager"
-          src="/20250507_133220.jpg"
+          src="./20250507_133220.jpg"
           width={384}
         />
       </div>
