@@ -12,12 +12,10 @@ export default function Home() {
           className="rounded-full  w-96 h-auto mt-8"
         ></img>
       </div>
-      <div className="flex flex-col items-center justify-center mt-8">
+      <div className="flex flex-col items-start justify-start mt-8">
         <h1 className={title({ size: "lg" })}>Hi! Ich bin Florian Kiel</h1>
-
-        <br />
-        <span className="flex flex-col items-center justify-center text-2xl">
-          <p className="flex flex-col items-center justify-center">
+        <span className="flex flex-col items-start justify-start text-2xl text-left">
+          <p className="flex flex-col items-start justify-start text-left">
             Dies ist meine Portfolio Webseite.
           </p>
           <p className="flex flex-col items-center justify-center">
@@ -94,8 +92,7 @@ export default function Home() {
         <h2 className={`${title({ size: "md" })}`}>
           Was gibt es sonst noch über mich zu erfahren?{" "}
         </h2>
-
-        <p className="text-2xl">
+        <p className="text-2xl text-left">
           Ich habe das Fachabitur im Bereich Wirtschaft und Verwaltung
         </p>
         <p className="text-2xl">
