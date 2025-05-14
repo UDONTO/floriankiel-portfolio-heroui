@@ -6,7 +6,6 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  NavbarMenuToggle,
 } from "@heroui/navbar";
 import NextLink from "next/link";
 
@@ -15,7 +14,7 @@ import { ThemeSwitch } from "@/components/theme-switch";
 import { siteConfig } from "@/config/site";
 
 export const Navbar = () => {
-  const searchInput = (
+{/*}  const searchInput = (
     <Input
       aria-label="Search"
       classNames={{
@@ -34,15 +33,15 @@ export const Navbar = () => {
       }
       type="search"
     />
-  );
+  );*/}
 
   return (
-    <HeroUINavbar maxHight="5xl" maxWidth="xl" position="sticky">
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand as="li" className="gap-3 max-w-fit">
+    <HeroUINavbar height="100px" position="sticky">
+      <NavbarContent justify="start">
+        <NavbarBrand as="li" className=" size-200%">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Logo />
-            <p className="font-bold text-inherit">FK</p>
+            <p className="font-bold text-inherit">F.K</p>
           </NextLink>
         </NavbarBrand>
         {/* <ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -67,7 +66,7 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-2">
+        <NavbarItem>
           {/* <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
             <DiscordIcon className="text-default-500" />
           </Link> */}
@@ -89,7 +88,7 @@ export const Navbar = () => {
         </Link>
 
         <ThemeSwitch />
-        <NavbarMenuToggle />
+        {/*<NavbarMenuToggle />*/}
       </NavbarContent>
 
       {/* <NavbarMenu>
