@@ -106,6 +106,7 @@ export default {
       focus: "#006FEE",
       overlay: "#000000",
     },
+    backgroundImage: "url('./raufasertapete-light.png')",
   },
   dark: {
     colors: {
@@ -214,5 +215,6 @@ export default {
       focus: "#006FEE",
       overlay: "#ffffff",
     },
+    backgroundImage: "url('./raufasertapete-dark.png')",
   },
 };

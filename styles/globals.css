@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-raufasertapete {
+  background-image: url("/raufasertapete-light.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.dark .bg-raufasertapete {
+  background-image: url("/raufasertapete-dark.png");
+}

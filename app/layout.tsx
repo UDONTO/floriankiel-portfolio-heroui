@@ -32,21 +32,27 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const backgroundElement = {
-    backgroundImage: "url('./raufasertapete-light.png')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "repeat",
-  };
+  // const backgroundElement: React.CSSProperties = {
+  //   backgroundImage: themeColor.backgroundImage,
+  //   backgroundSize: "cover",
+  //   backgroundPosition: "center",
+  //   backgroundRepeat: "repeat",
+  //   height: "100%",
+  //   width: "100%",
+  //   position: "fixed",
+  //   top: 0,
+  //   left: 0,
+  // };
   return (
     <html suppressHydrationWarning lang="en">
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen font-sans antialiased",
           fontSans.variable,
         )}
       >
+        <div className="bg-raufasertapete"></div>
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
