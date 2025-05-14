@@ -32,6 +32,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const backgroundElement = {
+    backgroundImage: "url('./raufasertapete-light.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "repeat",
+  };
   return (
     <html suppressHydrationWarning lang="en">
       <head />
