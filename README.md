@@ -32,6 +32,12 @@ You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
 npm install
 ```
 
+### Add .env.local if not existing in project root folder
+
+```bash
+DEVELOPMENT=true
+```
+
 ### Run the development server
 
 ```bash
