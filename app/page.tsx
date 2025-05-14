@@ -16,19 +16,15 @@ export default function Home() {
           width={384}
         />
       </div>
-      <div className="flex flex-col items-start justify-start mt-8">
-        <h1 className={title({ size: "lg" })}>Hi! Ich bin Florian Kiel</h1>
-        <span className="flex flex-col items-start justify-start text-2xl text-left">
-          <p className="flex flex-col items-start justify-start text-left">
-            Dies ist meine Portfolio Webseite.
-          </p>
-          <p className="flex flex-col items-start justify-start text-left">
-            Hier Presentiere ich meine Fähigkeiten als Softwareentwickler.
-          </p>
-          <p className="text-left">
-            Ich habe zuvor mal mit diesen Programiersprachen gearbeitet:
-          </p>
-        </span>
+      <div className="w-full flex flex-col gap-0 mt-8 items-center justify-center text-center">
+        <div className=" flex flex-col ">
+          <h1 className={title({ size: "lg" })}>Hi! Ich bin Florian Kiel</h1>
+        </div>
+        <div className="text-2xl">
+          <p>Dies ist meine Portfolio Webseite.</p>
+          <p>Hier Presentiere ich meine Fähigkeiten als Softwareentwickler.</p>
+          <p>Ich habe zuvor mal mit diesen Programiersprachen gearbeitet:</p>
+        </div>
       </div>
       <div className="w-full flex flex-col gap-0 mt-8">
         {/* First card: right */}
@@ -101,10 +97,12 @@ export default function Home() {
           </Card>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center text-center">
-        <h2 className={`${title({ size: "md" })}`}>
-          Was gibt es sonst noch über mich zu erfahren?{" "}
-        </h2>
+      <div>
+        <div className="flex flex-col items-center justify-center text-center">
+          <h2 className={`${title({ size: "md" })}`}>
+            Was gibt es sonst noch über mich zu erfahren?{" "}
+          </h2>
+        </div>
         <p className="text-2xl text-left">
           Ich habe das Fachabitur im Bereich Wirtschaft und Verwaltung
         </p>
