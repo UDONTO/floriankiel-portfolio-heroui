@@ -9,7 +9,7 @@ export default function Home() {
       <div>
         <Image
           alt="A picture of Florian Kiel"
-          className="rounded-full  w-96 h-auto mt-8"
+          className="rounded-full  w-96 h-auto mt-8 easteregg"
           height={384}
           loading="eager"
           src="./20250507_133220.jpg"
@@ -21,9 +21,15 @@ export default function Home() {
           <h1 className={title({ size: "lg" })}>Hi! Ich bin Florian Kiel</h1>
         </div>
         <div className="text-2xl">
-          <p>Dies ist meine Portfolio Webseite.</p>
-          <p>Hier Presentiere ich meine Fähigkeiten als Softwareentwickler.</p>
-          <p>Ich habe zuvor mal mit diesen Programiersprachen gearbeitet:</p>
+          <p>Willkommen auf meiner Portfolio Webseite.</p>
+          <p>
+            Hier Presentiere ich meine Fähigkeiten und Erfahrungen als
+            angehender Softwareentwickler.
+          </p>
+          <p>
+            Ich habe bereits mit folgenden Programiersprachen verschiedenste
+            Applikationen entwickelt:
+          </p>
         </div>
       </div>
       <div className="w-full flex flex-col gap-0 mt-8">
@@ -31,9 +37,7 @@ export default function Home() {
         <div className="flex justify-end w-full">
           <Card className="p-10 flex flex-col w-full h-auto max-w-4xl mt-8 mb-20">
             <CardHeader>
-              <h2 className="text-lg">
-                Programiersprachen mit denen ich gearbeitet habe:
-              </h2>
+              <h2 className="text-lg">Programiersprachen Kenntnisse:</h2>
             </CardHeader>
             <CardBody>
               <ul className="max-w-md space-y-1 list-inside list-disc text-lg">
@@ -43,7 +47,7 @@ export default function Home() {
                 <li>C</li>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>Java Script</li>
+                <li>JavaScript</li>
                 <li>JSX</li>
                 <li>TypeScript</li>
                 <li>TSX</li>
@@ -54,17 +58,15 @@ export default function Home() {
           </Card>
         </div>
 
-        <p className="text-2xl ml-4">
-          Ich habe auch schon mit diesen Frameworks gearbeitet:
+        <p className={`${title({ size: "sm" })} ml-4`}>
+          Folgende Frameworks sind mir bereits bekannt:
         </p>
 
         {/* Second card: left */}
         <div className="flex justify-start w-full">
           <Card className="p-10 flex flex-col w-full h-auto max-w-4xl mt-8 mb-20">
             <CardHeader>
-              <h2 className="text-lg">
-                Frameworks mit denen ich gearbeitet habe:
-              </h2>
+              <h2 className="text-lg">JavaScript Frameworks:</h2>
             </CardHeader>
             <CardBody>
               <ul className="text-lg list-disc max-w-md space-y-1 list-inside">
@@ -76,17 +78,15 @@ export default function Home() {
           </Card>
         </div>
 
-        <p className="text-2xl ml-4">
-          Ich habe auch schon mit diesen Komponenten Bibliotheken gearbeitet:
+        <p className={`${title({ size: "sm" })}`}>
+          Mit diesen Komponenten Bibliotheken habe ich bereits entwickelt:
         </p>
 
         {/* Third card: right */}
         <div className="flex justify-end w-full">
           <Card className="p-10 flex flex-col w-full h-auto max-w-4xl mt-8 mb-20">
             <CardHeader>
-              <h2 className="text-lg">
-                Komponenten Bibliotheken mit denen ich gearbeitet habe:
-              </h2>
+              <h2 className="text-lg">UI Frameworks:</h2>
             </CardHeader>
             <CardBody>
               <ul className="text-lg list-disc max-w-md space-y-1 list-inside">
@@ -107,7 +107,7 @@ export default function Home() {
           Ich habe das Fachabitur im Bereich Wirtschaft und Verwaltung
         </p>
         <p className="text-2xl text-left">
-          Derzeit mache ich eine berufsvorbereiutende Bilsungsmaßnahme in der
+          Derzeit mache ich eine berufsvorbereitende Bildungsmaßnahme in der
           Fachrichtung Anwendungsentwicklung.
         </p>
         <p className="text-2xl text-left">
@@ -118,11 +118,12 @@ export default function Home() {
           Sehr oft wohne ich doch an 2 Orten.
         </p>
         <p className="text-2xl text-left">
-          Ich habe auch schon mal ein Praktikum bei der Firma{" "}
+          Ich habe ein Praktikum im Bereich Frontend-Entwicklung bei der Firma{" "}
           <a className="text-primary " href="https://www.triplesensereply.de/">
             Reply Triplesense
           </a>{" "}
-          gemacht.
+          absolviert. Diese Portfolio-Seite, mithilfe von Next.js, React und
+          HeroUI, ist in dieser Zeit zustanden gekommen.
         </p>
       </div>
     </section>

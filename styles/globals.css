@@ -18,3 +18,8 @@
 .dark .bg-raufasertapete {
   background-image: url("/raufasertapete-dark.png");
 }
+
+.easteregg:hover {
+  animation: alternate 0.5s ease-in-out infinite;
+  transform: rotate3d(0, 1, 0, 180deg);
+}

@@ -1,5 +1,3 @@
-import { Input } from "@heroui/input";
-import { Kbd } from "@heroui/kbd";
 import { Link } from "@heroui/link";
 import {
   Navbar as HeroUINavbar,
@@ -9,12 +7,13 @@ import {
 } from "@heroui/navbar";
 import NextLink from "next/link";
 
-import { GithubIcon, Logo, SearchIcon } from "@/components/icons";
+import { GithubIcon, Logo } from "@/components/icons";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { siteConfig } from "@/config/site";
 
 export const Navbar = () => {
-{/*}  const searchInput = (
+  {
+    /*}  const searchInput = (
     <Input
       aria-label="Search"
       classNames={{
@@ -33,14 +32,20 @@ export const Navbar = () => {
       }
       type="search"
     />
-  );*/}
+  );*/
+  }
 
   return (
-    <HeroUINavbar height="100px" position="sticky">
-      <NavbarContent justify="start">
+    <HeroUINavbar
+      maxWidth="2xl"
+      height="100px"
+      position="sticky"
+      className="px-0"
+    >
+      <NavbarContent justify="start" className="w-full">
         <NavbarBrand as="li" className=" size-200%">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
+            <Logo size={50} />
             <p className="font-bold text-inherit">F.K</p>
           </NextLink>
         </NavbarBrand>
@@ -71,7 +76,7 @@ export const Navbar = () => {
             <DiscordIcon className="text-default-500" />
           </Link> */}
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
+            <GithubIcon className="text-default-500" size={30} />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
@@ -84,7 +89,7 @@ export const Navbar = () => {
         </Link> */}
 
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+          <GithubIcon className="text-default-500" size={30} />
         </Link>
 
         <ThemeSwitch />
