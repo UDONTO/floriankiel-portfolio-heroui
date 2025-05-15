@@ -9,7 +9,7 @@ export default function Home() {
       <div>
         <Image
           alt="A picture of Florian Kiel"
-          className="rounded-full  w-96 h-auto mt-8 easteregg"
+          className="rounded-full  w-96 h-auto mt-8"
           height={384}
           loading="eager"
           src="./20250507_133220.jpg"
