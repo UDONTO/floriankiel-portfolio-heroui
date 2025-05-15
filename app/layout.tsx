@@ -52,7 +52,14 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <div className="bg-raufasertapete"></div>
+        <div
+          className="bg-raufasertapete light:visible"
+          style={{ backgroundImage: "url('./raufasertapete-light.png')" }}
+        ></div>
+        <div
+          className="bg-raufasertapete invisible dark:visible"
+          style={{ backgroundImage: "url('./raufasertapete-dark.png')" }}
+        ></div>
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
