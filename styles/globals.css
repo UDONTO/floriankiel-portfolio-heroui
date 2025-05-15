@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bg-raufasertapete {
-  background-image: url("/raufasertapete-light.png");
+  background-image: url("~/raufasertapete-light.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -16,5 +16,5 @@
 }
 
 .dark .bg-raufasertapete {
-  background-image: url("/raufasertapete-dark.png");
+  background-image: url("~/raufasertapete-dark.png");
 }
